@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <children>
+      <TextArea fx:id="textArea" layoutX="132.0" layoutY="25.0" prefHeight="375.0" prefWidth="305.0" visible="false" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="132.0" AnchorPane.rightAnchor="163.0" AnchorPane.topAnchor="25.0" />
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="newMenuItem" mnemonicParsing="false" text="New" />
+              <MenuItem fx:id="saveMenuItem" mnemonicParsing="false" text="Save" />
+                  <MenuItem fx:id="logOutMenuItem" mnemonicParsing="false" text="Log out" />
+                  <MenuItem fx:id="deleteMenuItem" mnemonicParsing="false" text="Delete" />
+                  <MenuItem fx:id="deleteAllMenuItem" mnemonicParsing="false" text="Delete All" />
+                  <MenuItem fx:id="insertPhotoMenuItem" mnemonicParsing="false" text="Insert photo" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Tools">
+            <items>
+              <MenuItem fx:id="searchMenuItem" mnemonicParsing="false" text="Search" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ListView fx:id="listView" layoutY="25.0" prefHeight="472.0" prefWidth="132.0" />
+      <ImageView fx:id="imageView" fitHeight="480.0" fitWidth="200.0" layoutX="473.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
